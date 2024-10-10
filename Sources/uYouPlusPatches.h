@@ -4,9 +4,9 @@
 #import <YouTubeHeader/YTColorPalette.h>
 #import <YouTubeHeader/YTCommonColorPalette.h>
 #import <YouTubeHeader/GOODialogView.h>
-#import "Tweaks/protobuf/objectivec/GPBDescriptor.h"
-#import "Tweaks/protobuf/objectivec/GPBUnknownField.h"
-#import "Tweaks/protobuf/objectivec/GPBUnknownFieldSet.h"
+#import <YouTubeHeader/GPBDescriptor.h>
+#import <YouTubeHeader/GPBUnknownField.h>
+#import <YouTubeHeader/GPBUnknownFields.h>
 #import "uYouPlus.h"
 
 @interface PlayerManager : NSObject
@@ -75,6 +75,7 @@
 @interface ELMPBShowActionSheetCommand : GPBMessage
 @property (nonatomic, strong, readwrite) ELMPBCommand *onAppear;
 @property (nonatomic, assign, readwrite) BOOL hasOnAppear;
+- (id)listOptionArray;
 @end
 
 @interface ELMContext : NSObject
